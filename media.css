@@ -1,0 +1,240 @@
+/* Default styles for all devices */
+/* Adjustments for tablets */
+@media (max-width: 1024px) {
+    /* Example: Adjust padding or font sizes */
+    #top{
+        top: 10%;
+    }
+    .navbar-menu {
+        flex-direction: column;
+        position: fixed;
+        top: 70px;
+        left: 0;
+        background: linear-gradient(to bottom, rgb(110, 16, 85), rgb(130, 120, 138));
+        height:100%;
+        width: 100%;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .navbar-menu.active {
+        transform: translateX(0);
+    }
+ 
+    
+    /* Show the navbar menu when it has 'open' class */
+    
+    .navbar-item {
+        
+        margin-top: 2em;
+        margin-left: 2em;
+        margin-bottom: 10px;
+    }
+
+    .navbar-toggle {
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar-item a::before,
+    .navbar-item a::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background-color: #fff;
+        top: 0;
+        left: 0;
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
+    }
+
+    .navbar-item a::after {
+        top: auto;
+        bottom: 0;
+    }
+
+    .navbar-item a:hover::before,
+    .navbar-item a:hover::after {
+        transform: scaleX(1);
+    }
+
+    .cont h1 {
+        font-size: 30px;
+    }
+
+    .follow {
+        font-size: 1.5em;
+    }
+
+    .fa i {
+        font-weight: 800;
+        font-size: 30px;
+    }
+    
+}
+
+/* Adjustments for mobile phones */
+@media (max-width: 768px) {
+    #home{
+        top: 7%;
+    }
+    .navbar-brand {
+        font-size: 18px;
+    }
+
+    .navbar-item a {
+        font-size: 1em;
+    }
+
+    .cont h1 {
+        font-size: 25px;
+    }
+
+    .follow {
+        margin-top: 2em;
+        font-size: 1.5em;
+    }
+
+    .fa i {
+      font-weight: 800;
+        font-size: 1.5em;
+    }
+
+    .section-title {
+        font-size: 2em;
+    }
+
+    .service-item {
+        width: 100%;
+    }
+
+    .about-us-item {
+        padding: 15px;
+    }
+
+    .about-us-item h3 {
+        font-size: 1.5em;
+    }
+
+    .section-text {
+        font-size: 18px;
+    }
+    .content h1{
+        font-size: 2.7em;
+    }
+    .content p{
+        font-size: 1.3em;
+        padding: 1.5em;
+    }
+    #learnh2{
+        font-size: 1.7em;
+    }
+    #learnul{
+        font-size: 0.8em;
+        padding: 2em;
+    }
+    #learnull{
+        font-size: 1.3em;
+        padding: 1em;
+    }
+    #hed2{
+        font-size: 2.2em;
+        padding: 1em;
+    }
+    .section-text{
+        font-size: 1.3em;
+        padding: 0.7em;
+    }
+
+    .about-us-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .about-us-item {
+       box-sizing: border-box;
+        padding: 15px;
+    }
+    
+    .about-us-item h3 {
+        font-size: 1.6rem;
+    }
+    
+    .about-us-item p {
+        font-size: 1.1rem;
+    }
+    #getintouch{
+        margin-bottom: -6em;
+        width: 22.2em;
+        height: 20em;
+    }
+    .contact.row form {
+        width: 100%; /* Make the form full-width */
+        padding: 1em; /* Add some padding for better readability */
+    }
+
+   .contact.row form input[type="text"], 
+   .contact.row form input[type="email"], 
+   .contact.row form textarea {
+        width: 100%; /* Make the input fields full-width */
+        padding: 0.5em; /* Add some padding for better readability */
+        font-size: 1.2em; /* Reduce font size for mobile screens */
+    }
+
+   .contact.row form textarea {
+        height: 10em; /* Reduce the height of the textarea */
+    }
+
+   .contact.row form label {
+        font-size: 1.2em; /* Reduce font size for mobile screens */
+    }
+
+   .contact.row form button[type="submit"] {
+        width: 100%; /* Make the submit button full-width */
+        padding: 1.5em; /* Add some padding for better readability */
+        font-size: 1.2em; /* Reduce font size for mobile screens */
+    }
+   
+    .contact{
+        background-color: #fff;
+   
+    }
+    #gh3{
+        text-align: center;
+        margin-bottom: 1em;
+        color: #000000;
+    }
+    #links {
+        background-color: none;
+        margin-bottom: 0.5em; /* Set background color to white on mobile devices */
+      }
+     .footer-logo{
+        margin-top: 5em;
+     }
+     .row{
+       margin-bottom: 1em;  
+     }
+     
+     .footer-container {
+        
+        flex-direction: column;
+        align-items: center;
+      }
+      .footer-logo {
+        margin-top: 2em;
+      }
+      .row {
+        margin-bottom: 2em;
+      }
+      #links {
+        flex-direction: column;
+      }
+      #links a {
+        margin-bottom: 1em;
+      }
+      /* NEWS */
+
+      
+     
+}
+
+
